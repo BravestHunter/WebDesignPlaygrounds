@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  /* Converts default 16px size to convenient 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #000;
+}
+
+:root {
+  /* Variables */
+  --color-primary: #e67e22;
+  --color-primary-light: #fdf2e9;
+  --color-primary-light-second: #fae5d3;
+  --color-primary-dark: #cf711f;
+  --color-white: #fff;
+  --color-gray: #555;
+  --color-gray-light: #ddd;
+  --color-gray-dark: #333;
+
+  --letter-spacing-close: -0.5px;
+  --letter-spacing-far: 0.75px;
+
+  --btn-border-radius: 8px;
+
+  --animation-speed: 250ms;
+}
+
+/*****************************/
+/* General components */
+/*****************************/
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-close);
+  color: var(--color-gray-dark);
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.1;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: var(--letter-spacing-far);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: var(--btn-border-radius);
+
+  transition: background-color var(--animation-speed);
+}
+
+.btn-full {
+  color: var(--color-white);
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: var(--color-primary);
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-outline {
+  color: var(--color-gray);
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: var(--color-white);
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: var(--color-primary-light);
+
+  /* Trick to add border inside box */
+  box-shadow: inset 0 0 0 3px var(--color-white);
+}
