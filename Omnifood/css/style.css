@@ -298,26 +298,6 @@
   color: var(--color-primary);
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.list-item-icon {
-  width: 3rem;
-  height: 3rem;
-  color: var(--color-primary);
-}
-
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
@@ -382,4 +362,115 @@
 
 .testimonials-gallery-item img:hover {
   transform: scale(1.1);
+}
+
+/*****************************/
+/* Pricing */
+/*****************************/
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.section-pricing-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+  width: 70%;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid var(--color-primary-light);
+  padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+  background-color: var(--color-primary-light);
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: var(--color-yellow);
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.pricing-plan-name {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.pricing-plan-price {
+  color: var(--color-gray-dark);
+  font-size: 6.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.pricing-plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.pricing-plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color-gray-light-third);
+}
+
+.pricing-plan-signup {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.pricing-plan .list-item span {
+  color: var(--color-gray);
+}
+
+.pricing-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--color-gray);
+}
+
+.pricing-feature-icon {
+  color: var(--color-primary);
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  background-color: var(--color-primary-light);
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.pricing-feature-title {
+  font-size: 2.4rem;
+  color: var(--color-gray-dark);
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.pricing-feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--color-gray);
 }
