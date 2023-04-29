@@ -214,3 +214,111 @@
 .how-step-img {
   width: 35%;
 }
+
+/*****************************/
+/* Meals */
+/*****************************/
+
+.section-meals {
+  padding: 4.8rem 0;
+}
+
+.meals-card {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all var(--animation-speed);
+}
+
+.meals-card:hover {
+  transform: translateY(-2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meals-card-img {
+  width: 100%;
+}
+
+.meals-card-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meals-card-tag-list {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.meals-card-tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-gray-dark);
+  border-radius: 1000px; /* Super large value */
+}
+
+.meals-card-tag--vegetarian {
+  background-color: var(--color-green);
+}
+
+.meals-card-tag--vegan {
+  background-color: var(--color-lime);
+}
+
+.meals-card-tag--paleo {
+  background-color: var(--color-yellow);
+}
+
+.meals-card-title {
+  font-size: 2.4rem;
+  color: var(--color-gray-dark);
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meals-card-attribute-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meals-card-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meals-card-attribute-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: var(--color-primary);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-item-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-primary);
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
