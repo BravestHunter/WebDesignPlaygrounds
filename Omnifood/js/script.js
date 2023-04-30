@@ -1,5 +1,12 @@
-console.log("Hello, world!");
+// Make mobile navigation work
+const navigationButtonElement = document.querySelector(".btn-mobile-nav");
+const headerElement = document.querySelector(".header");
 
+navigationButtonElement.addEventListener("click", function () {
+  headerElement.classList.toggle("nav-open");
+});
+
+// Set up copyright year
 const copyrightYearElement = document.querySelector(".copyright-year");
 const currentYear = new Date().getFullYear();
 copyrightYearElement.textContent = currentYear;
@@ -22,7 +29,7 @@ function checkFlexGap() {
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
-checkFlexGap();
+//checkFlexGap();
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
