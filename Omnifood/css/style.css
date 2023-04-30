@@ -9,6 +9,7 @@
   background-color: var(--color-primary-light);
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .header-logo {
@@ -56,6 +57,38 @@
 .header-nav-link.header-nav-link-primary:hover,
 .header-nav-link.header-nav-link-primary:active {
   background-color: var(--color-primary-dark);
+}
+
+/* Mobile */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.btn-mobile-nav-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--color-gray-dark);
+}
+
+.btn-mobile-nav-icon[name="menu-outline"] {
+  display: block;
+}
+
+.btn-mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+.nav-open .btn-mobile-nav-icon[name="menu-outline"] {
+  display: none;
+}
+
+.nav-open .btn-mobile-nav-icon[name="close-outline"] {
+  display: block;
 }
 
 /*****************************/

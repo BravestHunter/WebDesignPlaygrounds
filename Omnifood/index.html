@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <title>Omnifood</title>
   </head>
@@ -40,6 +41,11 @@
           </li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="btn-mobile-nav-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="btn-mobile-nav-icon" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -134,7 +140,7 @@
           <!-- STEP 1 -->
           <div class="how-step-text-box">
             <p class="how-step-number">01</p>
-            <h3 class="heading-tertiary">
+            <h3 class="heading-tetriary">
               Tell us what you like (and what not)
             </h3>
             <p class="how-step-description">
@@ -162,7 +168,7 @@
           </div>
           <div class="how-step-text-box">
             <p class="how-step-number">02</p>
-            <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+            <h3 class="heading-tetriary">Approve your weekly meal plan</h3>
             <p class="how-step-description">
               Once per week, approve the meal plan generated for you by Omnifood
               AI. You can change ingredients, swap entire meals, or even add
@@ -173,7 +179,7 @@
           <!-- STEP 3 -->
           <div class="how-step-text-box">
             <p class="how-step-number">03</p>
-            <h3 class="heading-tertiary">Receive meals at convenient time</h3>
+            <h3 class="heading-tetriary">Receive meals at convenient time</h3>
             <p class="how-step-description">
               Best chefs in town will cook your selected meal every day, and we
               will deliver it to your door whenever works best for you. You can
@@ -277,7 +283,7 @@
           </div>
 
           <div class="meals-diet-list">
-            <h3 class="heading-tertiary">Works with any diet</h3>
+            <h3 class="heading-tetriary">Works with any diet</h3>
             <ul class="list">
               <li class="list-item">
                 <ion-icon
@@ -735,7 +741,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2023 by Omnifood, Inc. All rights reserved.
+            Copyright &copy; <span class="copyright-year">XXXX</span> by
+            Omnifood, Inc. All rights reserved.
           </p>
         </div>
         <div class="footer-address-col">
@@ -793,5 +800,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script defer src="js/script.js"></script>
   </body>
 </html>
